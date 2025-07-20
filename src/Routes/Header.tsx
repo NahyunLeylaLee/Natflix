@@ -144,7 +144,6 @@ function Header() {
     const navigate = useNavigate();
     const { register, handleSubmit } = useForm<IForm>();
     const onValid = (data: IForm) => {
-        console.log(data);
         navigate(`/search?keyword=${data.keyword}`);
     }
     return (
@@ -174,6 +173,7 @@ function Header() {
                 <Search onSubmit={handleSubmit(onValid)}>
                     <motion.svg
                         onClick={toggleSearch}
+                        style={{cursor: "pointer"}}
                         animate={{ x: searchOpen ? -220 : 0 }}
                         transition={{ ease: "linear" }}
                         fill="currentColor"
