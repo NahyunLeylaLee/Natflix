@@ -5,6 +5,7 @@ import { Banner, MediumTitle, Overview, Title, Wrapper } from "./TV";
 import Slider from "./Slider";
 import { Loader } from "./Home";
 import { makeImagePath } from "../utills";
+import { useEffect } from "react";
 
 function Search() {
     const location = useLocation();

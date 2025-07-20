@@ -150,6 +150,7 @@ function Header() {
         <Nav initial="top" animate={navAnimation} variants={navVariants}>
             <Col>
                 <Logo
+                    onClick={() => navigate("/")}
                     variants={logoVariants}
                     whileHover="active"
                     initial="normal"

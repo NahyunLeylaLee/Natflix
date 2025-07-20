@@ -224,7 +224,6 @@ function Slider({ type, category, data }: ISliderProps) {
         }
     };
     const decreaseIndex = () => {
-        console.log(index);
         if (data) {
             if (leaving) return;
             toggleLeaving();
