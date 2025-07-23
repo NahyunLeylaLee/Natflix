@@ -8,7 +8,7 @@ import { ErrorBoundary } from "react-error-boundary";
 
 function App() {
   return (
-    <ErrorBoundary fallback={<p>Error Occured</p>}>
+    <ErrorBoundary fallback={<NotFound />}>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <Routes>

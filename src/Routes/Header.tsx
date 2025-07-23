@@ -169,7 +169,7 @@ function Header() {
   const { register, handleSubmit, setValue } = useForm<IForm>();
   const onValid = (data: IForm) => {
     navigate(`/search?keyword=${data.keyword}`);
-    // setValue("keyword", "");
+    setValue("keyword", "");
   }
   useEffect(() => {
     if (width <= 640) {
@@ -240,7 +240,6 @@ function Header() {
             ></path>
           </motion.svg>
           <Input
-          type="search"
             {...register("keyword", { required: true, minLength: 2 })}
             animate={inputAnimation}
             initial={{ scaleX: 0 }}
