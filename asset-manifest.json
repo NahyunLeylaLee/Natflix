@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Natflix/static/js/main.7ab306f8.js",
+    "main.js": "/Natflix/static/js/main.f7fd36db.js",
     "index.html": "/Natflix/index.html",
-    "main.7ab306f8.js.map": "/Natflix/static/js/main.7ab306f8.js.map"
+    "main.f7fd36db.js.map": "/Natflix/static/js/main.f7fd36db.js.map"
   },
   "entrypoints": [
-    "static/js/main.7ab306f8.js"
+    "static/js/main.f7fd36db.js"
   ]
 }
