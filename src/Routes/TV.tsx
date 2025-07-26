@@ -3,6 +3,7 @@ import { makeImagePath } from "../utills";
 import Slider from "./Slider";
 import { getAiringToday, getTv, getTvPopular, getTvTopRated, IGetShow } from "../api";
 import { Banner, Loader, MediumTitle, Overview, Title, Wrapper } from "./Home";
+import { Helmet } from "react-helmet";
 
 function TV() {
   const { data, isLoading } = useQuery<IGetShow>({
@@ -23,6 +24,11 @@ function TV() {
   });
   return (
     <Wrapper>
+      <Helmet>
+        <title>
+          TV Shows
+        </title>
+      </Helmet>
       {isLoading || !data ? (
         <Loader>Loading...</Loader>
       ) : (

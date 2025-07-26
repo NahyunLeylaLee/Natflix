@@ -5,6 +5,7 @@ import { makeImagePath } from "../utills";
 import Slider from "./Slider";
 import { breakpoints } from "../media";
 import { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet";
 
 export const Wrapper = styled.div`
   height: fit-content;
@@ -105,6 +106,11 @@ function Home() {
   });
   return (
     <Wrapper>
+      <Helmet>
+        <title>
+          Home
+        </title>
+      </Helmet>
       {isLoading || !data ? (
         <Loader>Loading...</Loader>
       ) : (
