@@ -27,14 +27,6 @@ function Search() {
     queryKey: [keyword],
     queryFn: () => getSearchTv(keyword as string),
   });
-  useEffect(() => {
-    console.log('data = ', data);
-    console.log(data && tvData)
-  }, [data]);
-
-  useEffect(() => {
-    console.log('tvData = ', tvData);
-  }, [tvData])
   return (
     <Wrapper>
       <Helmet>
